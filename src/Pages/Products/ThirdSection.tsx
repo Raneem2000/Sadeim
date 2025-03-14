@@ -53,14 +53,14 @@ const ThirdSection = () => {
   return (
     <div className="rounded-lg  border border-stroke bg-white py-1 shadow-sm dark:border-strokedark dark:bg-boxdark">
       <div className="flex flex-col gap-2">
-        <div className="flex justify-between items-center p-1 px-6">
+        <div className="grid grid-cols-1 space-y-2 md:space-y-0 md:grid-cols-2  items-center p-1 px-6">
           <div className="flex gap-4 text-[#969696]">
             <div className="text-[#152C55]">All</div>
             <div>Unpaid</div>
             <div>Unfullfilled</div>
             <div>+</div>
           </div>
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center md:justify-end">
             {/* حقل إدخال التاريخ */}
             <input
               type="date"
