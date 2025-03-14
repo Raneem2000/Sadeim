@@ -3,11 +3,11 @@ import React from 'react';
 const FirstSection = () => {
   const userInfo = [
     { key: 'Status', value: 'active' },
-    { key: 'Phone', value: '+963 954 597 362' },
-    { key: 'Location', value: 'Syria' },
-    { key: 'Email', value: 'rdasouki6@gmail.com' },
-    { key: 'Role', value: 'Frontend Developer' },
-    { key: 'Joined', value: '2024-01-15' },
+    { key: 'Email', value: 'Ahmad.S@gmail.com' },
+    { key: 'Phone', value: '+177058463459' },
+    { key: 'Location', value: 'USA' },
+    { key: 'Address', value: '8440 W Agatite Ave, Chicago IL' },
+    { key: 'ZIP code', value: '0000' },
   ];
   return (
     <>
@@ -43,7 +43,7 @@ const FirstSection = () => {
                   {item.key}
                 </span>
                 <span
-                  className={`text-sm dark:text-white truncate overflow-hidden max-w-[160px]  ${
+                  className={` dark:text-white truncate overflow-hidden max-w-[160px]  ${
                     isStatus &&
                     'text-xs font-bold p-1 px-1.5 rounded-lg border '
                   } ${statusColor}`}

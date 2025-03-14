@@ -7,10 +7,10 @@ import ThirdSection from './Products/ThirdSection';
 const Test = () => {
   return (
     <DefaultLayout>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-3">
         <FirstCard />
         <SecondSection />
-        <ThirdSection/>
+        <ThirdSection />
       </div>
     </DefaultLayout>
   );

@@ -2,9 +2,54 @@ import React, { useState } from 'react';
 import { FaChevronDown, FaFilter } from 'react-icons/fa';
 import { MdSearch } from 'react-icons/md';
 import filter from '../../assets/icons/Filter.svg';
+import Table from '../../components/Table';
 const ThirdSection = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
-
+  const columns = [
+    { key: 'order', label: 'Order Number' },
+    { key: 'date', label: 'Date' },
+    { key: 'status', label: 'Status' },
+    { key: 'payment', label: 'Payment Status' },
+    { key: 'amount', label: 'Amount' },
+    { key: 'action', label: 'Actions' },
+  ];
+  const data = [
+    {
+      order: { value: '#12345' },
+      date: { value: '2024-03-14' },
+      status: {
+        value: 'Complete',
+      },
+      payment: {
+        value: 'Paid',
+      },
+      amount: { value: '$150.00' },
+      action: { isDeletable: true },
+    },
+    {
+      order: { value: '#12346' },
+      date: { value: '2024-03-13' },
+      status: {
+        value: 'Pending',
+      },
+      payment: {
+        value: 'Pending',
+      },
+      amount: { value: '$200.00' },
+      action: { isDeletable: false },
+    },
+    {
+      order: { value: '#12347' },
+      date: { value: '2024-03-12' },
+      status: {
+        value: 'Cancelled',
+      },
+      payment: {
+        value: 'Failed',
+      },
+      amount: { value: '$99.99' },
+      action: { isDeletable: true },
+    },
+  ];
   return (
     <div className="rounded-lg  border border-stroke bg-white py-1 shadow-sm dark:border-strokedark dark:bg-boxdark">
       <div className="flex flex-col gap-2">
@@ -52,6 +97,7 @@ const ThirdSection = () => {
             className="w-full font-light text-sm pl-8 pr-4 py-1.5 rounded-lg bg-white text-[#A5A5A5] border border-stroke shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
+        <Table columns={columns} data={data} />
       </div>
     </div>
   );
