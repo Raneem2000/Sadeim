@@ -35,7 +35,7 @@ module.exports = {
         bodylight: "#f6f7f9",
         blueligth:"#D2DAEF",
         'gray-2': '#cccccc',
-        'gray-3': '#FAFAFA',
+        'gray-3': '#E3E3E3',
         whiten: '#F1F5F9',
         whiter: '#F5F7FD',
         boxdark: '#24303F',

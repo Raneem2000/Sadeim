@@ -45,7 +45,7 @@ const SecondSection = () => {
               <span className="text-sm font-medium text-primary dark:text-white">
                 {item.title}
               </span>
-              <span className="block font-bold text-md text-[#606060] dark:text-gray-300">
+              <span className="block font-bold text-lg text-[#606060] dark:text-gray-300">
                 {item.subtitle1}
               </span>
               <span className="block text-xs text-[#B8B8B8] dark:text-gray-300">

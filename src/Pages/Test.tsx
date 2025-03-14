@@ -10,7 +10,7 @@ const Test = () => {
       <div className="flex flex-col gap-4">
         <FirstCard />
         <SecondSection />
-        {/* <ThirdSection/> */}
+        <ThirdSection/>
       </div>
     </DefaultLayout>
   );
